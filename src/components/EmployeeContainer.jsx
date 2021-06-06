@@ -10,13 +10,13 @@ class EmployeeContainer extends Component {
     filteredEmployees: [],
     sortDirections: this.initialSortDirections,
   };
-
+// This allows us to sort by name
   get initialSortDirections() {
     return {
       name: "",
     };
   }
-
+// This makes our api call
   componentDidMount() {
     API.getEmployee()
       .then((res) =>
@@ -72,7 +72,7 @@ class EmployeeContainer extends Component {
       });
     }
   };
-
+// This filter our employees when the search bar is used
   filterEmployees = (input) => {
     if (input) {
       this.setState({
@@ -93,7 +93,7 @@ class EmployeeContainer extends Component {
       this.setState({ filteredEmployees: this.state.employees });
     }
   };
-
+// this format the date
   formatDate = (date) => {
     date = new Date(date);
     let dob = [];
@@ -103,7 +103,7 @@ class EmployeeContainer extends Component {
 
     return dob.join("-");
   };
-
+// This renders the search bar and table of employees
   render() {
     return (
       <>
