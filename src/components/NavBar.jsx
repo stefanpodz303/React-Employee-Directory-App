@@ -3,7 +3,7 @@ import React from "react";
 const NavBar = () => {
   return (
     <header>
-      <h1 className="text-center">React Employee Directory</h1>
+      <h1>React Employee Directory</h1>
     </header>
   );
 };

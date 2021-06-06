@@ -3,12 +3,12 @@ import React from "react";
 
 const EmployeeTable = (props) => {
     return (
-      <table className="table table-striped table-sortable text-center">
+      <table>
         <thead>
           <tr>
             <th scope="col">Image</th>
             <th scope="col" data-field="name" data-sortable="true">
-              <span onClick={() => props.sortBy("name", "last", "first")}>
+              <span onClick={()  => props.sortBy("name", "last", "first")} style={{cursor:'pointer'}}>
                 Name
               </span>
             </th>
@@ -36,13 +36,13 @@ const EmployeeTable = (props) => {
                 <td>
                   <img src={employee.picture.thumbnail} alt={fullName} />
                 </td>
-                <td className="align-middle">{fullName}</td>
-                <td className="align-middle">
+                <td >{fullName}</td>
+                <td >
                 <a href={`tel:+1${employee.phone}`}>{employee.phone}</a></td>
-                <td className="align-middle email">
+                <td >
                   <a href={`mailto:${employee.email}`}>{employee.email}</a>
                 </td>
-                <td className="align-middle">{dob}</td>
+                <td >{dob}</td>
               </tr>
             );
           })}
