@@ -1,12 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import EmployeeContainer from "./components/EmployeeContainer";
+
+const App = () => {
   return (
-    <div className="App">
-      Hello World!
-    </div>
+    <>
+      
+      <EmployeeContainer />
+    </>
   );
-}
+};
 
 export default App;
