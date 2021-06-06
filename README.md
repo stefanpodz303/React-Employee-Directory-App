@@ -41,7 +41,7 @@ N/A
 https://github.com/stefanpodz303/React-Employee-Directory-App
 
 ## Deployed
-
+https://react-employee-direc.herokuapp.com/
 
 ## GitHub
 - stefanpodz303
